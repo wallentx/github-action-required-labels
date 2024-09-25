@@ -63,8 +63,8 @@ async function action() {
         octokit,
         shouldAddComment,
         `Unknown exit_code input [${exitType}]. Must be one of: ${allowedExitCodes.join(
-          ", "
-        )}`
+          ", ",
+        )}`,
       );
       return;
     }
